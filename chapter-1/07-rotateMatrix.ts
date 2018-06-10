@@ -4,9 +4,7 @@ const rotateMatrix = (matrix: number[][]): number[][] => {
   return matrix
 }
 
-console.log(`
-  rotateMatrix
-`)
+export default rotateMatrix
 
 // 1 2 -> 3 1
 // 3 4    4 2
@@ -20,6 +18,5 @@ console.log(`
 // 0,1 -> 1,1
 // 0,2 -> 2,2
 // 1,1 -> 2,1
-// 2,2 -> 2,0
 //
-console.log(rotateMatrix([[1, 2], [3, 4]]))
+// 2,2 -> 2,0

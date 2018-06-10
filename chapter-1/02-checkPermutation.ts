@@ -15,8 +15,4 @@ const checkPermutation = (s1: string, s2: string): boolean => {
   return result === 0
 }
 
-console.log('\ncheckPermutation\n')
-console.log(checkPermutation('cat', 'tac') === true)
-console.log(checkPermutation('cat', 'cat') === true)
-console.log(checkPermutation('cat', 'tca') === true)
-console.log(checkPermutation('cat', 'hat') === false)
+export default checkPermutation

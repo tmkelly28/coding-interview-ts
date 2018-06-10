@@ -4,7 +4,10 @@ const palindromePermutation = (st: string): boolean => {
   const dict = {}
 
   for (let i: number = 0; i < st.length; i++) {
-    const ch:string = st[i].toLowerCase()
+    const ch: string = st[i].toLowerCase()
+
+    if (ch === ' ') continue
+
     if (dict[ch]) {
       delete dict[ch]
     } else {
@@ -15,5 +18,4 @@ const palindromePermutation = (st: string): boolean => {
   return Object.keys(dict).length <= 1
 }
 
-console.log('\npalindromePermutation\n')
-console.log(palindromePermutation('TAct Coa') === true)
+export default palindromePermutation

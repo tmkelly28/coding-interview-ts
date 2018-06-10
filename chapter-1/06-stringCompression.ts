@@ -15,8 +15,4 @@ const stringCompression = (st: string): string => {
   return compressed + (current + counter)
 }
 
-console.log(`
-  stringCompression
-`)
-console.log(stringCompression('aabccccd') === 'a2b1c4d1')
-console.log(stringCompression('aabcccc') === 'a2b1c4')
+export default stringCompression

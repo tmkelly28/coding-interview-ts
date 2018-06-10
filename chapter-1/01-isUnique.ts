@@ -9,6 +9,4 @@ const isUnique = (str: string): boolean => {
   return true
 }
 
-console.log('\nisUnique\n')
-console.log(isUnique('abc') === true)
-console.log(isUnique('cbc') === false)
+export default isUnique

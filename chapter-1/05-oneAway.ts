@@ -40,9 +40,4 @@ const oneAway = (str1: string, str2: string): boolean => {
   return true
 }
 
-console.log('\poneAway\n')
-console.log(oneAway('pale', 'ple') === true)   // remove
-console.log(oneAway('pales', 'pale') === true) // insert
-console.log(oneAway('pale', 'bale') === true)  // replace
-console.log(oneAway('pale', 'pale') === true)  // none
-console.log(oneAway('pale', 'bake') === false)
+export default oneAway
